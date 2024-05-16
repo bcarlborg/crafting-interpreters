@@ -1,2 +1,2 @@
 # crafting-interpretters
-My working directory for following along with the crafting interpreters book
+My working directory for following along with the crafting interpreters book!
