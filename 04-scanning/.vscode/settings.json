@@ -1,0 +1,6 @@
+{
+    "editor.inlayHints.enabled": "off",
+    "editor.parameterHints.enabled": true,
+    "java.signatureHelp.enabled": false,
+    "editor.suggest.showTypeParameters": true
+}
