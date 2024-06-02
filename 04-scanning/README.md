@@ -1,14 +1,11 @@
-# 04 Scanning -- notes
-
-## Notes on the implementation
-At this point, our interpreter `jlox` is a program that executes the main function in `Lox.java`. The interpreter simply prints the list of tokens that were scanned from the input stream.
+# Chapter 04: Scanning
+At this point, our interpreter `jlox` is a program that scans the input source program and prints out the list of tokens from that input source.
 
 `jlox` can either be run on its own with no arguments, or it can be passed a path to a file.
-- When it is run with no arguments, `jlox` runs in an infinite loop reading a line from `stdin` and outputting the tokens from that line on `stdout`.
-- When it is run with the path to a file as an argument, `jlox` reads the entire file and prints the list of tokens from that file on `stdout`.
 
 ![scanner_demo](../demo_gifs/04-jlox-scanner.gif)
 
+## Code Pointers
 ### What does `Lox.java` do?
 `Lox.java` contains the entry point for our interpreter. This class is responsible for parsing the command line arguments, reading the program source and calling the scanner. It does so in the following way:
 1. `main()` parses the arguments and either calls `runFile()` if a file path was passed as an argument or `runPrompt()` if no file path was given.
