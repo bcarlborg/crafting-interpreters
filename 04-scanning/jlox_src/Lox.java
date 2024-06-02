@@ -1,4 +1,4 @@
-package lox;
+package jlox_src;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -47,7 +47,7 @@ public class Lox {
         List<Token> tokens = scanner.scanTokens();
 
         for (Token token : tokens) {
-            System.out.println(source);
+            System.out.println(token);
         }
     }
 

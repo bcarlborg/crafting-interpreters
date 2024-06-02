@@ -1,4 +1,4 @@
-package lox;
+package jlox_src;
 
 
 import java.util.ArrayList;
@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static lox.TokenType.*;
+import static jlox_src.TokenType.*;
 
 class Scanner {
     private final String source;
@@ -36,7 +36,6 @@ class Scanner {
         keywords.put("var", VAR);
         keywords.put("while", WHILE);
     }
-
 
     Scanner(String source) {
         this.source = source;

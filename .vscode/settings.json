@@ -2,5 +2,8 @@
     "editor.inlayHints.enabled": "off",
     "editor.parameterHints.enabled": true,
     "java.signatureHelp.enabled": false,
-    "editor.suggest.showTypeParameters": true
+    "editor.suggest.showTypeParameters": true,
+    "cSpell.words": [
+        "jlox"
+    ]
 }
