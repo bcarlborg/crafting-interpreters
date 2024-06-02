@@ -7,7 +7,7 @@ At this point, our interpreter `jlox` is a program that executes the main functi
 - When it is run with no arguments, `jlox` runs in an infinite loop reading a line from `stdin` and outputting the tokens from that line on `stdout`.
 - When it is run with the path to a file as an argument, `jlox` reads the entire file and prints the list of tokens from that file on `stdout`.
 
-<!--  TODO: GIF HERE SHOWING BOTH OF THOSE BEHAVIORS -->
+![scanner_demo](../demo_gifs/04-jlox-scanner.gif)
 
 ### What does `Lox.java` do?
 `Lox.java` contains the entry point for our interpreter. This class is responsible for parsing the command line arguments, reading the program source and calling the scanner. It does so in the following way:
