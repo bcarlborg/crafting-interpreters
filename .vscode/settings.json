@@ -4,6 +4,7 @@
     "java.signatureHelp.enabled": false,
     "editor.suggest.showTypeParameters": true,
     "cSpell.words": [
+        "beignets",
         "jlox"
     ]
 }
