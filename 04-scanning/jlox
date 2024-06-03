@@ -1,5 +1,3 @@
 #!/bin/bash
 
 java ./jlox_src/lox.java "$@"
-
-
