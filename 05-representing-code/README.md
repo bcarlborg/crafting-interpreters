@@ -5,9 +5,7 @@ We also setup these classes we generate to use the visitor pattern. This pattern
 
 This is demonstrated with the program `./jlox_src/AstPrinter.java` which implements the functionality to print each expression in the abstract syntax tree. So that there is an observable artifact from this chapter, we also add a small test abstract syntax tree in `AstPrinter.java` and create a main function that will print it.
 
-~[abstract syntax tree printer demo](../demo_gifs/05-jlox-ast-printer.gif)
-
-### `./jlox_src/AstPrinter.java`
+![abstract syntax tree printer demo](../demo_gifs/05-jlox-ast-printer.gif)
 
 ## Code Pointers
 This chapter introduces two main files
@@ -27,6 +25,8 @@ This file generates a file called `Expr.java`. The program generates a list of c
 The Ast generator creates a list or classes from this grammar such that we get one class for each non-terminal that holds data for the right-hand side of each expression.
 
 We also setup each class to use the visitor pattern such such that we can implement new operations on each of the expression types that we generate.
+
+### `./jlox_src/AstPrinter.java`
 
 In this chapter, we build one bit of functionality that showcases the visitor pattern. We implement a print function for each of the classes in the expression grammar.
 
