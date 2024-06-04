@@ -32,7 +32,7 @@ This class showcases the functionality of the visitor pattern because we can eas
 ## Thoughts on the implementation so far
 - The visitor pattern is messy.
   - I have a really hard time grokking the visitor pattern... partially, because this is something that is just so easy to implement in a slightly more functional language.
-  - In a language like javascript, it so so much easier to define types of data and create functions that enumerate over each of the variants of those functions.
+  - In a language like typescript or rust, it so so much easier to define types of data and create functions that enumerate over each of the variants of those functions.
 - Meta-programming is neat!
-  - I am not very experiences with writing programs that write programs. Maybe it is just because it is a tool I am not as familiar with.
+  - I am not very experienced with writing programs that write programs. Maybe it is just because it is a tool I am not as familiar with.
   - This use-case -- generating classes from a grammar -- is particularly well suited to the tool.
