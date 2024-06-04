@@ -3,7 +3,11 @@ In this chapter, we create classes which represent the structure of our programm
 
 We also setup these classes we generate to use the visitor pattern. This pattern is quite confusing to me... but basically, it allows you to create new functionality for an entire set of classes without needing to implement functionality within those classes.
 
-This is demonstrated with the program `./jlox_src/AstPrinter.java` which implements the functionality to print each expression in the abstract syntax tree.
+This is demonstrated with the program `./jlox_src/AstPrinter.java` which implements the functionality to print each expression in the abstract syntax tree. So that there is an observable artifact from this chapter, we also add a small test abstract syntax tree in `AstPrinter.java` and create a main function that will print it.
+
+~[abstract syntax tree printer demo](../demo_gifs/05-jlox-ast-printer.gif)
+
+### `./jlox_src/AstPrinter.java`
 
 ## Code Pointers
 This chapter introduces two main files
@@ -24,7 +28,6 @@ The Ast generator creates a list or classes from this grammar such that we get o
 
 We also setup each class to use the visitor pattern such such that we can implement new operations on each of the expression types that we generate.
 
-### `./jlox_src/AstPrinter.java`
 In this chapter, we build one bit of functionality that showcases the visitor pattern. We implement a print function for each of the classes in the expression grammar.
 
 This class showcases the functionality of the visitor pattern because we can easily add new behavior to each of the classes in the system. In this case, the Ast printer class shows how we can effectively implement a `print()` operation on each abstract syntax tree node class without explicitly adding a new operation on each class.
