@@ -1,5 +1,7 @@
 # Chapter 06: Parsing Expressions
-_NOTE: this writeup is still a work in progress!_
+In this chapter, we implement a simple parser for the expressions in the lox programming language.
+
+![demo of parser](../demo_gifs/06-parser.gif)
 
 ## Grammars
 In the previous chapter, we created our grammar for an abstract syntax tree. This will be the intermediate representation that we actually traverse in order to actually execute the code that we interpret in our programming language.
