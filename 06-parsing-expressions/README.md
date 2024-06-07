@@ -40,7 +40,7 @@ primary        → NUMBER | STRING | "true" | "false" | "nil"
 
 This grammar encodes the different precedence levels of each operation
 
-## Parser Class Codepointers
+## Parser Class Code Pointers
 In this chapter, we build out the Parser class
 
 ### Fields and methods for interacting with tokens
@@ -56,7 +56,26 @@ In this chapter, we build out the Parser class
   - `consume()` which advances and returns if the token type is matched
 
 ### Syntax recognizing methods
-**TODO**
+Each of the non-terminals in the grammar gets its own parsing function. The parsing function will try to find any of the appropriate non-terminals by calling the function for whatever non-terminals appear on the right hand side of the production. So for example, the function for the `term` non-terminal is as follows.
+
+```java
+private Expr term() {
+    Expr expr = factor();               // <----- right hand side non-terminal
+
+    while (match(MINUS, PLUS)) {
+        Token operator = previous();
+        Expr right = factor();          // <----- right hand side non-terminal
+
+        // construct the abstract syntax tree node
+        expr = new Expr.Binary(expr, operator, right);
+    }
+
+    return expr;
+}
+
+```
+
+One observation about this recursive descent parser that took me a while to realize is that the functions themselves are created based on the concrete syntax tree grammar and the return values of the functions are from the abstract syntax tree grammar.
 
 ### Follow up questions for myself
 **How would this grammar encode right associative operators?**
@@ -83,3 +102,5 @@ private Expr equality() {
 ```
 
 You can see here that we implement a small while loop within the recursive descent parser to iterate forward over the successive equality operators. Then we construct each new `expr` expression we can encode the associativity there.
+
+If we wanted to encode right associativity, we would need to make the the while loop in the parsing function self recursive rather than a while loop.
