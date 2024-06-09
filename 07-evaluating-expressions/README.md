@@ -8,14 +8,17 @@ Creating the interpreter for the expressions in our AST was quite simple given t
 
 However, it is worth noting that the AST nodes for expressions do not encode that the values on each side of the operands are of a particular type. The code for each node visitor must process the generic `Object` on each side of the operand, and so our visitor must know how to check the type of each operand or raise an exception if the type does not match.
 
-## Dynamic Types for our Expressions
+## Expression Operations and Types
 This interpreter implements very light weight dynamic typing into the interpreter. We do checks against the values in our nodes and the operator in the node to see if they are a valid operation. This happens because our nodes are defined with the type `Object` for every node. Of course we know that the literal values in our AST are actually values like `String` or `double`, so we can downcast these values to a simpler type.
 
-TODO: @beau -- describe nil and NaN here too.
+Our lox implementation has the following data types:
+- `boolean`
+- `double` (which implicitly gives us `NaN` values)
+- `string`
+- `nil`
 
-Our lox implementation has
-- the following types for literal values: `boolean`, `double` and `string`.
-- the following operations on those types:
+
+Our lox implementation up to this point has the following operations on those types:
   - comparisons: `> >= < <=`
   - equality: `!= ==`
   - negation: `!`
