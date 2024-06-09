@@ -5,3 +5,4 @@ The repository is organized with one directory for each chapter. There is a `REA
 - [chapter 04: Scanning](./04-scanning/README.md)
 - [chapter 05: Representing Code](./05-representing-code/README.md)
 - [chapter 06: Parsing Expressions](./06-parsing-expressions/README.md)
+- [chapter 07: Evaluating Expressions](./07-evaluating-expressions/README.md)
