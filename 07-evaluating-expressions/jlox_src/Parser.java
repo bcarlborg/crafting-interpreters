@@ -146,7 +146,7 @@ public class Parser {
         return new ParseError();
     }
 
-    private void syncrhonize() {
+    private void synchronize() {
         advance();
 
         while (!isAtEnd()) {

@@ -8,12 +8,14 @@ package jlox_src;
 import java.util.List;
 
 abstract class Expr {
+    // The interface for a class that operates on every expression
     interface Visitor<R> {
         R visitBinaryExpr(Binary expr);
         R visitGroupingExpr(Grouping expr);
         R visitLiteralExpr(Literal expr);
         R visitUnaryExpr(Unary expr);
     }
+
     static class Binary extends Expr {
         Binary(Expr left, Token operator, Expr right) {
             this.left = left;

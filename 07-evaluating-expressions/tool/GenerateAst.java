@@ -99,6 +99,7 @@ public class GenerateAst {
         PrintWriter writer, String baseName, List<String> types
     ) {
         // visitor declaration -- one indent level
+        writer.println("    // The interface for a class that operates on every expression");
         writer.println("    interface Visitor<R> {");
 
         // visitor visit function declaration -- two indent level
@@ -110,5 +111,7 @@ public class GenerateAst {
 
         // visitor declaration closing curly -- one indent level
         writer.println("    }");
+        writer.println("");
+
     }
 }
