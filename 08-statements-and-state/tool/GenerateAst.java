@@ -20,6 +20,11 @@ public class GenerateAst {
             "Literal  : Object value",
             "Unary    : Token operator, Expr right"
         ));
+
+        defineAst(outputDir, "Stmt", Arrays.asList(
+            "Expression : Expr expression",
+            "Print      : Expr expression"
+        ));
     }
 
     private static void defineAst(
@@ -99,7 +104,7 @@ public class GenerateAst {
         PrintWriter writer, String baseName, List<String> types
     ) {
         // visitor declaration -- one indent level
-        writer.println("    // The interface for a class that operates on every expression");
+        writer.println("    // The interface for a class that operates on every " + baseName + " node");
         writer.println("    interface Visitor<R> {");
 
         // visitor visit function declaration -- two indent level

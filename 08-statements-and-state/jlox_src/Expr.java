@@ -8,7 +8,7 @@ package jlox_src;
 import java.util.List;
 
 abstract class Expr {
-    // The interface for a class that operates on every expression
+    // The interface for a class that operates on every Expr node
     interface Visitor<R> {
         R visitBinaryExpr(Binary expr);
         R visitGroupingExpr(Grouping expr);
