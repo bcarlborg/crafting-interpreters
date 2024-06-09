@@ -11,3 +11,4 @@ To more clearly show the progression from each chapter to the next, I've organiz
 - [Chapter 05: Representing Code](./05-representing-code/README.md)
 - [Chapter 06: Parsing Expressions](./06-parsing-expressions/README.md)
 - [Chapter 07: Evaluating Expressions](./07-evaluating-expressions/README.md)
+- [Chapter 08: Evaluating Expressions](./08-statements-and-state/README.md) -- _still a work in progress_
