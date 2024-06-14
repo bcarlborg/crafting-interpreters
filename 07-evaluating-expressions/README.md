@@ -3,6 +3,9 @@ In this chapter, we build an interpreter for the literal expressions in our lang
 
 ![demo gif showing the evaluation of expressions](../demo_gifs/07-expression-evaluation.gif)
 
+## Overview of the compiler so far
+[Diagram showing all of the compiler phases up to this point](../demo_gifs/07-diagram-overview.png)
+
 ## Expression Node Visitor Interpreter
 Creating the interpreter for the expressions in our AST was quite simple given the visitor pattern we had built for our AstPrinter. By simply creating a handful of functions for the different nodes in our ast, we could create an interpreter that could produce a value for the entire expression by traversing the AST.
 

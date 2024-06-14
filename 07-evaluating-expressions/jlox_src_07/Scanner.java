@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static jlox_src.TokenType.*;
+import static jlox_src_07.TokenType.*;
 
 class Scanner {
     private final String source;
