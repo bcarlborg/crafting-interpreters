@@ -1,8 +1,8 @@
-package jlox_src;
+package jlox_src_07;
 
 import java.util.List;
 
-import static jlox_src.TokenType.*;
+import static jlox_src_07.TokenType.*;
 
 public class Parser {
     private static class ParseError extends RuntimeException {}

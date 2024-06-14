@@ -1,4 +1,4 @@
-package jlox_src;
+package jlox_src_07;
 
 class RuntimeError extends RuntimeException {
     final Token token;

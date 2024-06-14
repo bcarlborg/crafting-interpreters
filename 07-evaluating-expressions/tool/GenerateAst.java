@@ -30,7 +30,7 @@ public class GenerateAst {
         String path = outputDir + '/' + baseName + ".java";
         PrintWriter writer = new PrintWriter(path, "UTF-8");
 
-        writer.println("package jlox_src;");
+        writer.println("package jlox_src07;");
         writer.println();
         writer.println("// ====================================================================");
         writer.println("// GENERATED FILE -- DO NOT MODIFY DIRECTLY");

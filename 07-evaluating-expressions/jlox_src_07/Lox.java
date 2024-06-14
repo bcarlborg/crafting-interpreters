@@ -1,4 +1,4 @@
-package jlox_src;
+package jlox_src_07;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -73,6 +73,7 @@ public class Lox {
         System.err.println(
             "[line " + line + "] Error" + where + ": " + message
         );
+        hadError = true;
     }
 
     static void error(Token token, String message) {

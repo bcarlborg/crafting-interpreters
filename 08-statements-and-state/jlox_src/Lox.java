@@ -66,6 +66,7 @@ public class Lox {
         System.err.println(
             "[line " + line + "] Error" + where + ": " + message
         );
+        hadError = true;
     }
 
     static void error(Token token, String message) {

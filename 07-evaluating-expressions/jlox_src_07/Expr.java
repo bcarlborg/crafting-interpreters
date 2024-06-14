@@ -1,4 +1,4 @@
-package jlox_src;
+package jlox_src_07;
 
 // ====================================================================
 // GENERATED FILE -- DO NOT MODIFY DIRECTLY
