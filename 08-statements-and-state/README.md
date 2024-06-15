@@ -5,12 +5,12 @@ We begin the chapter by introducing simple expression statements and print state
 
 We then move on to introduce block statements and nested environments. These allow us to build basic block scoping to our programs.
 
-![demo of jlox running programs that utilize statements and state](../demo_gifs/08-statements-state.gif)
+![demo of jlox running programs that utilize statements and state](../demo_gifs/08-statements-and-state.gif)
 
 ## Diagram overview of interpreter up to this point
 __additions in this chapter are highlighted in light blue__
 
-[diagram that outlines the implementation of the interpreter up to this point](../demo_gifs/08-statements-and-state.png)
+<img src="../demo_gifs/08-diagram-overview.png">
 
 ## Notes on changes in this chapter
 
