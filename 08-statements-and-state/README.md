@@ -81,4 +81,4 @@ __additions in this chapter are highlighted in light blue__
 - Javascript has a global scope and a module scope
   - if your code is running in a module, the only way to get a value into global scope is to write it to the window object
 - Javascript also has the concept of hoisting variable declarations, so certain declarations are hoisted into the top of your scope before execution begins
-
+- I am also curious what the semantics are of using uninitialized variables in other languages. Javascript has undefined and null. Java has null.
