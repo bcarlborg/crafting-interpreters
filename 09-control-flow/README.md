@@ -18,10 +18,11 @@ may not evaluate.
   to calculate that in order to evaluate the expression.
 
 **9.4 While loops**
+- Add a while looping construct to the language by creating a new while loop syntactic structure and abstract syntax tree node.
+- The while loop abstract syntax tree node is simply a statement and a condition. We execute the condition until the condition is false.
 
 
 **9.5 For Loops**
 
-**
-
-
+## Notes
+- How do iterators work?
