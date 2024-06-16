@@ -21,8 +21,21 @@ may not evaluate.
 - Add a while looping construct to the language by creating a new while loop syntactic structure and abstract syntax tree node.
 - The while loop abstract syntax tree node is simply a statement and a condition. We execute the condition until the condition is false.
 
-
 **9.5 For Loops**
+- We create a for loop syntax construct. The for loop (syntactically) is composed of 3 interior expressions in the loop and a statement body.
+    - I sort of assumed that the interior of the for loop would be statements rather than expressions with `';'`s on the end.
+- Instead of creating a new syntax tree node for for loops though, we translate the syntax of our for loop into while loop AST nodes.
+- so, in effect, a for loop gets translated to:
+```
+{
+    for loop initializer statement
+    while (for loop condition) {
+        for loop body
+        for loop increment
+    }
+}
+```
+- notice that we need a wrapping scope around the whole while loop to ensure that the initializer statement is scoped only to the while loop.
 
 ## Notes
 - How do iterators work?
