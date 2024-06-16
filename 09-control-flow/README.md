@@ -1,5 +1,11 @@
 # Chapter 09: Control Flow
-__This chapter is still a work in progress__
+In this chapter, we implement multiple forms of control flow (conditional evaluation and looping).
+
+We implement two forms of conditional execution -- (1) if statements and (2) conditional expression evaluation using logical operators.
+
+We also introduce two looping syntactic constructs to our language -- (1) while loops and (2) for loops.
+
+![Demo of jlox programming with control flow and looping](../demo_gifs/09-control-flow.gif)
 
 ## Notes on implementation
 **9.2 Conditional Execution**
