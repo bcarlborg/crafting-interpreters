@@ -13,3 +13,4 @@ To more clearly show the progression from each chapter to the next, I've organiz
 - [Chapter 07: Evaluating Expressions](./07-evaluating-expressions/README.md)
 - [Chapter 08: Statements and State](./08-statements-and-state/README.md)
 - [Chapter 09: Control Flow](./09-control-flow/README.md)
+- [Chapter 10: Functions](./10-functions/README.md) -- _(this chapter is a work in progress)_
