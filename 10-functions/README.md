@@ -23,8 +23,18 @@ In our code to evaluate the call, we cast the expression for our `callee` into a
 
 
 **10.2: Native Functions**
+Many programming languages introduce a handful of "native" functions to their language. These native functions are implemented in the "native" language of the interpreter. So in our case, these functions are implemented in java.
 
+These functions are sometimes called primitives or built-ins.
 
+Note: native functions are not the only types of functions that can be implemented in another programming language.
+Many programming languages offer some form of Foreign Function Interface (FFI) that allows users to implement functions in another language.
+
+We decide to add a `clock()` built-in to our language that will print the current time in micro-seconds.
+
+Doing so is as simply as adding a new lox-callable function to our global scope that implements the class methods on lox callable (`arity()`, `call()`, `toString()`).
+
+After adding that new function to the global scope, our program can now evaluate `clock()` by evaluating the new `Call` expression type.
 
 **10.3: Function Declarations**
 
