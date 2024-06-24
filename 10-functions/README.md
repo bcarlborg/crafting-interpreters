@@ -37,7 +37,9 @@ Doing so is as simply as adding a new lox-callable function to our global scope 
 After adding that new function to the global scope, our program can now evaluate `clock()` by evaluating the new `Call` expression type.
 
 **10.3: Function Declarations**
-
+- We add the parsing for the function declaration syntax and we add the new AST node for the function.
+- In this chapter, we only do the parsing, we do not add the evaluation code. Specifically, we add parsing for the function declaration. We split the function declaration into two parts, the `functionDecl` and simply a `function`.
+- The only tricky bit in parsing the function declaration is parsing all of the arguments one by one.
 
 **10.4: Function Objects**
 
