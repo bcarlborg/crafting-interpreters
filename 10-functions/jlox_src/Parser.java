@@ -10,6 +10,17 @@ LOX GRAMMAR
 -----------------------------------------------------------------
 Statements
 -----------------------------------------------------------------
+declaration    → funDecl                                   <--------- New with functions
+               | varDecl
+               | statement;
+
+funDecl        → "fun" function;                           <--------- New with functions
+varDecl        → "var" IDENTIFIER ("=" expression)? ";";
+
+function       → IDENTIFIER "(" parameters? ")" block;     <--------- New with functions
+parameters     → IDENTIFIER ( "," IDENTIFIER ")*;          <--------- New with functions
+arguments      → expression ( "," expression )*;           <--------- New with functions
+
 statement      → exprStmt
                | forStmt
                | ifStmt
@@ -44,14 +55,10 @@ term           → factor ( ( "-" | "+" ) factor )* ;
 factor         → unary ( ( "/" | "*" ) unary )* ;
 
 unary          → ( "!" | "-" ) unary | call ;
-call           → primary ( "(" arguments? ")" )* ; <------------ New in this chapter
-
+call           → primary ( "(" arguments? ")" )* ;           <----------- new with functions
 primary        → "true" | "false" | "nil" | "this"
                | NUMBER | STRING | IDENTIFIER | "(" expression ")"
                | IDENTIFIER ;
-
-
-arguments      → expression ( "," expression )* ; <------------ New in this chapter
 */
 
 public class Parser {
