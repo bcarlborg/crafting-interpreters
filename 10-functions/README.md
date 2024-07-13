@@ -42,6 +42,7 @@ After adding that new function to the global scope, our program can now evaluate
 - The only tricky bit in parsing the function declaration is parsing all of the arguments one by one.
 
 **10.4: Function Objects**
+-
 
 
 **10.5: Return Statements**
